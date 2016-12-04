@@ -1,0 +1,64 @@
+author = "Template by [CC]Mr. Sinn";
+onLoadName = "Template Mission";
+onLoadMission = "Copyright by Cobra Commando, 2016";
+loadScreen = "loadScreen_ca.jpg";
+
+#include "CHVD\dialog.hpp"
+class CfgFunctions {
+	#include "CHVD\CfgFunctions.hpp"
+};
+
+class Header 
+{
+  gameType=Coop;
+  minPlayers=1;
+  maxPlayers=64;
+};
+
+respawn = "BASE";
+RespawnDelay = 30;
+RespawnDialog = 0;
+forceRotorLibSimulation = 0;
+respawnOnStart = 0;
+disabledAI=1; 
+
+//0 is global chat
+disableChannels[]={{0,true,true},{1,true,true},{2,true,true},{6,true,true}};
+
+respawnTemplates[] = {"MenuPosition"};
+#include "loadout\cfgRespawnInventory.hpp"
+#include "loadout\cfgRoles.hpp"
+
+class RscTitles
+{
+	titles[]={};
+	class ct_info
+	{
+	  	idd=-1;
+	  	movingEnable=1;
+		enableSimulation = 1;
+		enableDisplay = 1; 
+	  	duration=60;
+	  	fadein=1;
+		fadeout=1.9;
+	  	name="ct_info";
+	  	controls[]={"title1"};
+	  	class title1
+		{
+			type=0;
+			idc=-1;
+			size=1;
+			colorBackground[]={0,0,0,0};
+			colorText[]={1,1,1,1};
+			font="PuristaMedium";
+	  	  	text="loading-screen.paa";
+			style = 48 + 0x800;
+	  	  	sizeEx=0;
+			x=safeZoneXAbs;
+	  	  	y=safeZoneY;
+	  	  	w=safeZoneWAbs;
+	  	  	h=safeZoneH;
+		};
+	};
+};
+

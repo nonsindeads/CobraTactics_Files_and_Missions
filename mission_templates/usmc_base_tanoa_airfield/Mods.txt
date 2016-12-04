@@ -1,0 +1,18 @@
+ace
+acex
+cba
+cobra stuffpack
+cup core
+nato rus vehicles
+nato rus weapons
+pla forces vehicles
+tfar
+usmc vehicles mas
+
+
+usaf
+ffaa
+cobra tactic optionals - including usaf and ffaa
+
+optional
+werthless headless modules
