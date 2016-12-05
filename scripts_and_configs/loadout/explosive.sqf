@@ -1,4 +1,4 @@
-ammo_man_one addaction [("<t color=""#458b74"">" + ("Explosive Specialist") + "</t>"), {
+private _unit = _this select 0;
 comment "Remove existing items";
 removeAllWeapons player;
 removeAllItems player;
@@ -59,4 +59,3 @@ comment "Add items";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
-}];
