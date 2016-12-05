@@ -1,7 +1,8 @@
-ammo_man_one addaction [("<t color=""#8B4513"">" + ("Helicopter Pilot") + "</t>"), {
+private _unit = _this select 0;
 comment "Remove existing items";
 removeAllWeapons player;
 removeAllItems player;
+removeAllAssignedItems player;
 removeUniform player;
 removeVest player;
 removeBackpack player;
@@ -33,6 +34,5 @@ comment "Add items";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
-player linkItem "ItemAndroid";
+player linkItem "ItemGPS";
 player linkItem "NVGoggles_mas_h";
-}];

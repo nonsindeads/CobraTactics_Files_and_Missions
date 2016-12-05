@@ -1,4 +1,4 @@
-ammo_man_one addaction [("<t color=""#00008b"">" + ("Diver Medic") + "</t>"), {
+private _unit = _this select 0;
 comment "Remove existing items";
 removeAllWeapons player;
 removeAllItems player;
@@ -59,4 +59,3 @@ player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
 player linkItem "ItemGPS";
-}];

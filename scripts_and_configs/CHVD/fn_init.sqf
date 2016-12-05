@@ -28,7 +28,7 @@
 	waitUntil {!isNull player};
 	waitUntil {!isNull findDisplay 46};
 
-	_actionText = if (isLocalized "STR_chvd_title") then {localize "STR_chvd_title"} else {"Sichtweite einstellen"};
+	_actionText = if (isLocalized "STR_chvd_title") then {localize "STR_chvd_title"} else {("<t color=""#00fa9a"">" + ("Sichtweite einstellen") + "</t>")};
 	player addAction [_actionText, CHVD_fnc_openDialog, [], -99, false, true];
 	player addEventHandler ["Respawn", format ["player addAction ['%1', CHVD_fnc_openDialog, [], -99, false, true]", _actionText]];
 
