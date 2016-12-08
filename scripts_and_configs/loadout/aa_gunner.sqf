@@ -1,8 +1,6 @@
 private _unit = _this select 0;
-comment "Remove existing items";
 removeAllWeapons _unit;
 removeAllItems _unit;
-removeAllAssignedItems _unit;
 removeUniform _unit;
 removeVest _unit;
 removeBackpack _unit;
@@ -20,7 +18,7 @@ _unit addItemToUniform "ACE_MapTools";
 _unit addItemToUniform "ACE_morphine";
 for "_i" from 1 to 4 do {_unit addItemToUniform "ACE_packingBandage";};
 for "_i" from 1 to 2 do {_unit addItemToUniform "ACE_tourniquet";};
-_unit addVest "V_PlateCarrier1_rgr";
+_unit addVest "V_mas_mar_PlateCarrierGL_rgr_g";
 for "_i" from 1 to 5 do {_unit addItemToVest "hlc_30rnd_556x45_EPR";};
 _unit addItemToVest "30Rnd_556x45_Stanag_Tracer_Red";
 _unit addItemToVest "SmokeShellGreen";

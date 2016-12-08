@@ -64,4 +64,4 @@ private _loadoutActions = {
 	} count _this;
 };
 //und jetzt rufen wir _loadoutActions für alle Kisten auf:
-[ammo_1,ammo_2,ammo_3] call _loadoutActions;
+[ammo_1,ammo_2,ammo_3,ammo_4] call _loadoutActions;
